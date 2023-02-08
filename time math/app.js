@@ -1,0 +1,11 @@
+var secondPreMin = 60;
+var minPerhour = 60;
+var hourPerday = 24;
+var daysPerWeek = 7;
+var weeksPerYear = 52;
+var secondsPerDay = secondPreMin * minPerhour * hourPerday;
+var secondsPerYear = secondsPerDay * 365;
+document.write('<h2>There are ' + secondsPerDay + ' seconds in a day.');
+var yearsAlive= prompt("Enter the number of years you have been alive");
+x = parseInt(yearsAlive) * secondsPerYear;
+document.write('<h2> I have been alive for more than ' + x + ' seconds');
